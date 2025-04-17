@@ -10,6 +10,12 @@ import { Link } from "react-router-dom";
 // Base services data
 const baseServices = [
   {
+    title: "Website Development",
+    desc: "Website development involves creating, designing, and maintaining websites for the internet or intranet.",
+    icon: "/src/assets/services/icon3.svg",
+    link: "/web-decvelopment-banner/1",
+  },
+  {
     title: "App Development",
     desc: "App development is the process of designing, building, testing, and deploying software applications for mobile or desktop platforms.",
     icon: "/src/assets/Services/icon1.svg",
@@ -19,13 +25,7 @@ const baseServices = [
     title: "Content Writing",
     desc: "Content writing is the process of creating, editing, and publishing written content for digital and print media.",
     icon: "/src/assets/services/icon2.svg",
-    link: "content-writer-banner/3",
-  },
-  {
-    title: "Website Development",
-    desc: "Website development involves creating, designing, and maintaining websites for the internet or intranet.",
-    icon: "/src/assets/services/icon3.svg",
-    link: "/web-decvelopment-banner/1",
+    link: "/content-writer-banner/3",
   },
 ];
 
@@ -116,7 +116,10 @@ const Services = () => {
       </Swiper>
 
       {/* Custom Dots */}
-      <div className="flex justify-center mt-6" id="custom-swiper-pagination"></div>
+      <div
+        className="flex justify-center mt-6"
+        id="custom-swiper-pagination"
+      ></div>
     </section>
   );
 };

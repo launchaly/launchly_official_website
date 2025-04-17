@@ -5,12 +5,12 @@ const contactDetails = [
   {
     icon: <FaPhoneAlt size={30} />,
     title: "Phone",
-    lines: ["9693318841", "9693318841"],
+    lines: ["9693318841"],
   },
   {
     icon: <FaEnvelope size={30} />,
     title: "Email",
-    lines: ["launchlysoftware@gmail.com", "launchlysoftware@gmail.com"],
+    lines: ["launchlysoftware@gmail.com"],
   },
   {
     icon: <FaMapMarkerAlt size={30} />,
@@ -40,7 +40,7 @@ const Contact = () => {
               {item.title}:
             </h3>
             {item.lines.map((line, i) => (
-              <p key={i} className="text-black text-sm sm:text-base">
+              <p key={i} className="text-black text-md sm:text-lg">
                 {line}
               </p>
             ))}
