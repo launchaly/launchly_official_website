@@ -21,10 +21,13 @@ import Web_DeveloperBanner from "./components/services/Web_Developer/Web_Develop
 import App_Development_Banner from "./components/services/App_Development/App_Development_Banner";
 import Content_Writing_Banner from "./components/services/Content_Writhing/Content_Writing_Banner";
 import Our_Working_Team from "./components/Our_Working_Team/Our_Working_Team";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
-    <Router>
+    <Router>    
+      <ScrollToTop />
       <Header />
 
       <Routes>
@@ -41,22 +44,10 @@ function App() {
         <Route path="/gallery-banner" element={<GalleryBanner />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact-banner" element={<ContactBanner />} />
-
         <Route path="/our-working-team" element={<Our_Working_Team />} />
-
-        <Route
-          path="/web-decvelopment-banner/1"
-          element={<Web_DeveloperBanner />}
-        />
-        <Route
-          path="/app-development-banner/2"
-          element={<App_Development_Banner />}
-        />
-        <Route
-          path="/content-writer-banner/3"
-          element={<Content_Writing_Banner />}
-        />
-
+        <Route path="/web-decvelopment-banner/1" element={<Web_DeveloperBanner />} />
+        <Route path="/app-development-banner/2" element={<App_Development_Banner />} />
+        <Route path="/content-writer-banner/3" element={<Content_Writing_Banner />} />
         <Route
           path="*"
           element={
