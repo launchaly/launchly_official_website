@@ -1,13 +1,10 @@
 import React from "react";
 
-const galleryImages = [
-  "/images/cake1.jpg",
-  "/images/dinner.jpg",
-  "/images/group.jpg",
-  "/images/cake2.jpg",
-  "/images/cake3.jpg",
-  "/images/group2.jpg",
-];
+import Sadanand from "./assets/Sadanand_kumar_yadav.jpg";
+import Suraj from "./assets/Suraj_Kumar.jpg";
+import Pooja from "./assets/pooja_limbola.jpg";
+
+const galleryImages = [Sadanand, Suraj, Pooja];
 
 const Gallery = () => {
   return (
@@ -26,11 +23,14 @@ const Gallery = () => {
         {/* Grid Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((src, index) => (
-            <div key={index} className="overflow-hidden rounded-md shadow-md">
+            <div
+              key={index}
+              className="h-[300px] bg-white overflow-hidden rounded-md shadow-md flex items-center justify-center"
+            >
               <img
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="h-full w-[100%] object-contain"
               />
             </div>
           ))}

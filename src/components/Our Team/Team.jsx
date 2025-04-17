@@ -1,9 +1,11 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import Our_Working_Team from "../Our_Working_Team/Our_Working_Team";
 
 const OurTeam = () => {
   return (
+    <>
     <section className="bg-[#f7f0e7] py-16 px-4 lg:px-20 box-border ">
       <div className="max-w-7xl mx-auto mb-20">
         <p className="text-[#b48f2b] text-base font-bold tracking-[2.56px] leading-[30px] mb-[10px] pr-[10px] relative uppercase ">
@@ -13,7 +15,7 @@ const OurTeam = () => {
         <h2 className="text-[#00113b] text-[32px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-bold tracking-tight leading-[1.2] sm:leading-[1.3] md:leading-[1.4] lg:leading-[64px] w-full max-w-[500px] mb-10">
           Elevating Business <br /> with IT Excellence
         </h2>
-    
+
         <div className="flex flex-col gap-y-5 ">
           {/* Founder */}
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
@@ -71,15 +73,15 @@ const OurTeam = () => {
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
             <div className="flex-shrink-0 w-full max-w-sm">
               <img
-                src="/src/assets/Team/Anindya_Dey.jpg"
-                alt="Anindya Dey"
+                src="/src/assets/Team/Suraj_Kumar.jpg"
+                alt="Suraj Kumar"
                 className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
               />
             </div>
 
             <div className="flex-1">
               <h3 className="text-[#b48f2b] text-[24px] font-bold leading-[46px] uppercase mt-0 ">
-                Anindya Dey
+                Suraj Kumar
               </h3>
 
               <p className="text-[#be6d32] text-[14px] font-semibold mb-[15px] uppercase">
@@ -104,22 +106,23 @@ const OurTeam = () => {
               </div>
 
               <p className="text-sm text-#000 text-[15px] leading-relaxed">
-                <strong>Anindya Dey</strong> I am a BCA graduate and a
-                passionate Android Developer with over 3 years of professional
-                experience in building high-quality, user-friendly mobile
-                applications. I specialize in creating robust Android apps using
-                Java, Kotlin, and modern development tools and frameworks. My
-                focus is on writing clean, maintainable code and delivering
-                efficient solutions that solve real-world problems. With a
-                strong foundation in software development and a keen eye for
-                detail, I aim to create seamless mobile experiences that delight
-                users and drive business growth.
+                <strong>Suraj Kumar</strong> I'm Suraj Kumar, a dedicated MERN
+                Stack Developer with strong expertise in building full-stack web
+                applications using React.js, Node.js, Express.js, and MongoDB.
+                I’ve worked on projects like a real-time chat app with
+                Socket.IO, an AI chatbot named Ai-chatPot, cryptocurrency
+                dashboards, and more. I'm skilled in frontend technologies like
+                HTML, CSS, JavaScript,React, Bootstrap, and Tailwind CSS, and
+                have experience in Backend technologies also like Node, MongoDb
+                and Express js .
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <Our_Working_Team />
+    </>
   );
 };
 

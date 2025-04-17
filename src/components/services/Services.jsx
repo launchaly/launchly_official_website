@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,7 +19,7 @@ const baseServices = [
     title: "Content Writing",
     desc: "Content writing is the process of creating, editing, and publishing written content for digital and print media.",
     icon: "/src/assets/services/icon2.svg",
-    link: "/content-development/2",
+    link: "content-writer-banner/3",
   },
   {
     title: "Website Development",
@@ -29,45 +29,36 @@ const baseServices = [
   },
 ];
 
-// Repeat the base services to simulate multiple slides
+// Repeat base services to simulate multiple slides
 const services = Array(3).fill(baseServices).flat();
 
 const Services = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const itemsPerSlide = 3;
-  const totalSlides = Math.ceil(services.length / itemsPerSlide);
-
-  const handleDotClick = (index) => {
-    setCurrentSlide(index);
-  };
+  const swiperRef = useRef(null);
 
   const handleArrow = (direction) => {
+    if (!swiperRef.current) return;
     if (direction === "left") {
-      setCurrentSlide((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+      swiperRef.current.slidePrev();
     } else {
-      setCurrentSlide((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+      swiperRef.current.slideNext();
     }
   };
-
-  const visibleServices = services.slice(
-    currentSlide * itemsPerSlide,
-    (currentSlide + 1) * itemsPerSlide
-  );
 
   return (
     <section className="bg-[#f6eee5] py-16 px-4 lg:px-20">
       {/* Header */}
-      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center ">
-        <p className="text-[#b48f2b] text-[16px] font-bold uppercase tracking-[2.56px] leading-[30px] ">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+        <p className="text-[#b48f2b] text-[16px] font-bold uppercase tracking-[2.56px] leading-[30px]">
           Our Services
         </p>
       </div>
-      <div className="flex justify-between ">
-        <h2 className="text-[#00113b] text-[34px] sm:text-[60px] lg:text-[50px] font-bold sm:leading-[64px] leading-[40px]  mb-10 mt-3">
+
+      <div className="flex justify-between">
+        <h2 className="text-[#00113b] text-[34px] sm:text-[60px] lg:text-[50px] font-bold sm:leading-[64px] leading-[40px] mb-10 mt-3">
           Smart Solutions for a <br /> Digital World
         </h2>
 
-        <div className="hidden lg:flex gap-3 mt-12 lg:mt-20 ">
+        <div className="hidden lg:flex gap-3 mt-12 lg:mt-20">
           <button
             onClick={() => handleArrow("left")}
             className="w-[55px] h-[55px] flex items-center justify-center border-2 border-[#b48f2b] rounded-md shadow hover:bg-[#b48f2b] hover:text-white transition"
@@ -83,14 +74,15 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Cards */}
+      {/* Swiper Cards */}
       <Swiper
         modules={[Pagination]}
         spaceBetween={20}
         pagination={{
           clickable: true,
-          el: "#custom-swiper-pagination", // this targets your custom container
+          el: "#custom-swiper-pagination",
         }}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         breakpoints={{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 1 },
@@ -114,7 +106,7 @@ const Services = () => {
               </p>
               <Link
                 to={service.link}
-                className="bg-[#b48f2b] text-white px-8 py-4 rounded-full text-md font-semibold hover:bg-[#997520] transition "
+                className="bg-[#b48f2b] text-white px-8 py-4 rounded-full text-md font-semibold hover:bg-[#997520] transition"
               >
                 View More
               </Link>
@@ -122,11 +114,9 @@ const Services = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/*  Dots */}
-      <div
-        className="flex justify-center mt-6"
-        id="custom-swiper-pagination"
-      ></div>
+
+      {/* Custom Dots */}
+      <div className="flex justify-center mt-6" id="custom-swiper-pagination"></div>
     </section>
   );
 };

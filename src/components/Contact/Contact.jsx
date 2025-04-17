@@ -16,8 +16,8 @@ const contactDetails = [
     icon: <FaMapMarkerAlt size={30} />,
     title: "Location",
     lines: [
-      "Mahada Complex near yashwant nagar ,virar-",
-      "nalasopara linked road Virar(west)-401303",
+      "Vill - Nayanananagr, P.O - Dihalahi,",
+      "Laherialsarai, Darbhanaga ,Bihar-846004",
     ],
   },
 ];
