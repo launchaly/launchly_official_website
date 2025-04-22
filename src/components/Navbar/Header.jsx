@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../Our_Working_Team/assets/logo.jpg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,11 @@ const Header = () => {
       {/* Logo */}
       <div className="z-10 flex items-center">
         <Link to="/">
-        <img
-          src="/src/components/Our_Working_Team/assets/logo.jpg"
-          alt="Logo"
-          className="w-[55px] md:w-[90px] h-auto rounded-full"
-        />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-[55px] md:w-[90px] h-auto rounded-full"
+          />
         </Link>
       </div>
 
@@ -69,8 +70,8 @@ const Header = () => {
         className="absolute top-0 left-[160px] sm:left-[270px] right-0 bottom-0 bg-black z-0"
         style={{
           clipPath: `polygon(${clipValue} 0, 100% 0, 100% 100%, 0% 100%)`,
-        }}  
-      />  
+        }}
+      />
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex absolute top-0 right-0 h-full items-center pr-6 md:pr-16 space-x-6 text-white text-md font-medium z-10">
