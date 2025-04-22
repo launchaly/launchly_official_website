@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed z-50 sm:h-[100px] h-[60px] shadow-md w-full top-0 left-0 flex items-center justify-between bg-[#f6ede3] px-6 md:px-20">
+    <header className="fixed z-50 sm:h-[100px] h-[60px] shadow-md w-full top-0 left-0 flex items-center justify-between bg-[red] px-6 md:px-20">
       {/* Logo */}
       <div className="z-10 flex items-center">
         <Link to="/">
