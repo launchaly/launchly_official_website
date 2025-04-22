@@ -1,5 +1,7 @@
 import React from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import Image1 from "../Our_Working_Team/assets/img1.webp";
+import Image2 from "../Our_Working_Team/assets/img2.png";
 
 const About = () => {
   return (
@@ -8,13 +10,13 @@ const About = () => {
         {/* Left Side - Images */}
         <div className="relative flex justify-center">
           <img
-            src="/src/components/Our_Working_Team/assets/img1.webp"
+            src={Image1}
             alt="about-img"
             className="rounded-xl w-[90%] sm:w-[80%] md:w-[70%] lg:w-[500px] xl:w-[85%] xl:h-[50%] h-[250px] sm:h-[400px] md:h-[450px] lg:h-[500px] shadow-md object-cover"
           />
 
           <img
-            src="/src/components/Our_Working_Team/assets/img2.png"
+            src={Image2}
             alt="team working"
             className="absolute bottom-[-40px] sm:bottom-[-50px] left-[70%] sm:left-[75%] translate-x-[-50%] rounded-xl w-40 sm:w-52 md:w-60 lg:w-72 border-4 border-white shadow-xl"
           />
