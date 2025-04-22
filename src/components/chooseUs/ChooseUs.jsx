@@ -2,27 +2,27 @@ import React from "react";
 
 const features = [
   {
-    icon: "/src/assets/ChooseUs/icon1.png",
+    icon: "/src/components/Our_Working_Team/assets/icon1.png",
     title: "Expert Team",
     desc: "Our team of experts ensures top-notch service and innovative solutions.",
   },
   {
-    icon: "/src/assets/ChooseUs/icon2.png",
+    icon: "/src/components/Our_Working_Team/assets/icon2.png",
     title: "Customized Solutions",
     desc: "We provide tailored solutions to meet your specific needs.",
   },
   {
-    icon: "/src/assets/ChooseUs/icon3.png",
+    icon: "/src/components/Our_Working_Team/assets/icon3.png",
     title: "Affordable Pricing",
     desc: "We offer high-quality services at competitive and affordable prices.",
   },
   {
-    icon: "/src/assets/ChooseUs/icon4.png",
+    icon: "/src/components/Our_Working_Team/assets/icon4.png",
     title: "Timely Delivery",
     desc: "We ensure your project is delivered on time, every time.",
   },
   {
-    icon: "/src/assets/ChooseUs/icon5.png",
+    icon: "/src/components/Our_Working_Team/assets/icon5.png",
     title: "End-to-End Support",
     desc: "We provide comprehensive support throughout the project lifecycle.",
   },
@@ -33,7 +33,7 @@ const ChooseUs = () => {
     <section className="bg-white py-16 px-4 md:px-20">
       <div className="text-start mb-6">
         <p className="text-[#b48f2b] text-[16px] font-bold uppercase tracking-[2.56px] leading-[30px] mb-[10px] pr-[10px] relative font-['Roboto','Helvetica','Arial',sans-serif] m-0 ">
-          Why Choose Us 
+          Why Choose Us
         </p>
 
         <h2 className="text-4xl md:text-5xl font-bold text-[#00113b]">

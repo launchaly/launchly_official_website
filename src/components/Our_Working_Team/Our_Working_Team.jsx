@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Suraj from "./assets/Suraj_Kumar.jpg";
-import Pooja from "./assets/pooja_limbola.jpg";
+import Suraj from "../Our_Working_Team/assets/Suraj_Kumar.jpg";
+import Pooja from "../Our_Working_Team/assets/Pooja_Limbola.jpg";
 
 const projects = [
   {

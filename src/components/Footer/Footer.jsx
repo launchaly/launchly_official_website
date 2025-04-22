@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo & Intro */}
         <div className="space-y-6">
           <img
-            src="/src/assets/logo.jpg"
+            src="/src/components/Our_Working_Team/assets/logo.jpg"
             alt="Logo"
             className=" rounded-full w-[80px] h-[80px] object-cover mx-auto md:mx-0"
           />

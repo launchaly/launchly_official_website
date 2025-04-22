@@ -21,7 +21,7 @@ const OurTeam = () => {
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
             <div className="flex-shrink-0 w-full max-w-sm">
               <img
-                src="/src/assets/Team/Sadanand_kumar_yadav.jpg"
+                src="/src/components/Our_Working_Team/assets/Sadanand_kumar_yadav.jpg"
                 alt="Sadanand Kumar Yadav"
                 className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
               />
@@ -73,7 +73,7 @@ const OurTeam = () => {
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
             <div className="flex-shrink-0 w-full max-w-sm">
               <img
-                src="/src/assets/Team/Suraj_Kumar.jpg"
+                src="/src/components/Our_Working_Team/assets/Suraj_Kumar.jpg"
                 alt="Suraj Kumar"
                 className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
               />

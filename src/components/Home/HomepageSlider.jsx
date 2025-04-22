@@ -34,21 +34,21 @@ const NextArrow = ({ onClick }) => (
 const HomepageSlider = () => {
   const slides = [
     {
-      image: "/src/assets/wallpaper.jpg",
+      image: "/src/components/Our_Working_Team/assets/wallpaper.jpg",
       title: "We Provide Services.",
       description:
         "Website Development, App Development, Digital Marketing, Social Media Marketing,Content Writing.",
       buttonText: "Contact Us",
     },
     {
-      image: "/src/assets/wallpaper2.jpg",
+      image: "/src/components/Our_Working_Team/assets/wallpaper2.jpg",
       title: "Elavate Your Online Presence with Us.",
       description:
         "We specialize in creating cutting-edge IT solution that enhance your brand visibility, improve user engagement, and drive business growth.",
       buttonText: "Contact Us",
     },
     {
-      image: "/src/assets/wallpaper3.webp",
+      image: "/src/components/Our_Working_Team/assets/wallpaper3.webp",
       title: "Smart Solution for a Digital Wolrld.",
       description:
         "In a era driven by technology, businesses need innovative and efficient IT solutions to stay ahead.",

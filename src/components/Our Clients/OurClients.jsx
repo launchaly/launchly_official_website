@@ -1,15 +1,15 @@
 import React from "react";
 
 const clientLogos = [
-  "/src/assets/OurClients/c1.png",
-  "/src/assets/OurClients/c2.png",
-  "/src/assets/OurClients/c3.webp",
-  "/src/assets/OurClients/c4.webp",
-  "/src/assets/OurClients/c5.png",
-  "/src/assets/OurClients/c6.png",
-  "/src/assets/OurClients/c7.avif",
-  "/src/assets/OurClients/c8.png",
-  "/src/assets/OurClients/c9.png",
+  "/src/components/Our_Working_Team/assets/c1.png",
+  "/src/components/Our_Working_Team/assets/c2.png",
+  "/src/components/Our_Working_Team/assets/c3.webp",
+  "/src/components/Our_Working_Team/assets/c4.webp",
+  "/src/components/Our_Working_Team/assets/c5.png",
+  "/src/components/Our_Working_Team/assets/c6.png",
+  "/src/components/Our_Working_Team/assets/c7.avif",
+  "/src/components/Our_Working_Team/assets/c8.png",
+  "/src/components/Our_Working_Team/assets/c1.png",
 ];
 
 const OurClients = () => {

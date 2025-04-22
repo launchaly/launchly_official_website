@@ -25,7 +25,7 @@ const Header = () => {
       <div className="z-10 flex items-center">
         <Link to="/">
         <img
-          src="/src/assets/logo.jpg"
+          src="/src/components/Our_Working_Team/assets/logo.jpg"
           alt="Logo"
           className="w-[55px] md:w-[90px] h-auto rounded-full"
         />

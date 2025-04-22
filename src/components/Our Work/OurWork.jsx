@@ -7,37 +7,37 @@ import "swiper/css/pagination";
 
 const projects = [
   {
-    image: "/src/assets/OurWork/W9.jpg",
+    image: "/src/components/Our_Working_Team/assets/W9.jpg",
     title: "Apna Paisa",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/PGB.jpg",
+    image: "/src/components/Our_Working_Team/assets/PGB.jpg",
     title: "PGB Technologies",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/Quick.jpg",
+    image: "/src/components/Our_Working_Team/assets/Quick.jpg",
     title: "Quick Mobiles",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/W8.jpg",
+    image: "/src/components/Our_Working_Team/assets/W8.jpg",
     title: "Reify",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/W5.jpg",
+    image: "/src/components/Our_Working_Team/assets/W5.jpg",
     title: "Aveda Hotels",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/W4.jpg",
+    image: "/src/components/Our_Working_Team/assets/W4.jpg",
     title: "Metsmorf",
     link: "#",
   },
   {
-    image: "/src/assets/OurWork/W3.jpg",
+    image: "/src/components/Our_Working_Team/assets/W3.jpg",
     title: "Sentinels Security",
     link: "#",
   },
@@ -49,7 +49,7 @@ const OurWork = () => {
       {/* Section Header */}
       <div className="flex items-center justify-between mb-10 relative">
         <h2 className="text-[#b48f2b] text-[16px] font-bold uppercase tracking-[2.56px] leading-[30px] mb-[10px] pr-[10px] relative before:absolute before:w-[40px] before:h-[2px] before:bg-[#b48f2b] before:top-1/2 before:-right-12">
-          Our Work 
+          Our Work
         </h2>
       </div>
 
