@@ -10,6 +10,9 @@ import Team from "../Our Team/Team";
 import OurWork from "../Our Work/OurWork";
 import OurClients from "../Our Clients/OurClients";
 import { Link } from "react-router-dom";
+import wallpaper1 from "./assets/wallpaper.jpg";
+import wallpaper2 from "./assets/wallpaper2.jpg";
+import wallpaper3 from "./assets/wallpaper3.webp";
 
 // Custom Prev Arrow (only for desktop)
 const PrevArrow = ({ onClick }) => (
@@ -34,28 +37,27 @@ const NextArrow = ({ onClick }) => (
 const HomepageSlider = () => {
   const slides = [
     {
-      image: "./assets/wallpaper.jpg",
+      image: wallpaper1,
       title: "We Provide Services.",
       description:
-        "Website Development, App Development, Digital Marketing, Social Media Marketing,Content Writing.",
+        "Website Development, App Development, Digital Marketing, Social Media Marketing, Content Writing.",
       buttonText: "Contact Us",
     },
     {
-      image: "./assets/wallpaper2.jpg",
+      image: wallpaper2,
       title: "Elavate Your Online Presence with Us.",
       description:
-        "We specialize in creating cutting-edge IT solution that enhance your brand visibility, improve user engagement, and drive business growth.",
+        "We specialize in creating cutting-edge IT solutions that enhance your brand visibility, improve user engagement, and drive business growth.",
       buttonText: "Contact Us",
     },
     {
-      image: "./assets/wallpaper3.webp",
-      title: "Smart Solution for a Digital Wolrld.",
+      image: wallpaper3,
+      title: "Smart Solution for a Digital World.",
       description:
-        "In a era driven by technology, businesses need innovative and efficient IT solutions to stay ahead.",
+        "In an era driven by technology, businesses need innovative and efficient IT solutions to stay ahead.",
       buttonText: "Contact Us",
     },
   ];
-
   const settings = {
     dots: true,
     infinite: true,
