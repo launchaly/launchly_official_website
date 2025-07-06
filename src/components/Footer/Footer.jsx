@@ -1,5 +1,6 @@
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import FooterLogo from "./assets/logo.jpg";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         {/* Logo & Intro */}
         <div className="space-y-6">
           <img
-            src="/src/components/Our_Working_Team/assets/logo.jpg"
+            src={FooterLogo}
             alt="Logo"
             className=" rounded-full w-[80px] h-[80px] object-cover mx-auto md:mx-0"
           />
@@ -63,7 +64,7 @@ const Footer = () => {
           <p>
             Vill - Nayanananagr, P.O - Dihalahi,
             <br />
-            Laherialsarai, Darbhanaga ,Bihar-846004
+            Laherialsarai, Darbhanaga, Bihar-846004
           </p>
           <p>+91 9693318841</p>
           <p>launchlysoftware@gmail.com</p>
