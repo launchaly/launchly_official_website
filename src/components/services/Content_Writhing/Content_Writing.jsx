@@ -1,5 +1,5 @@
 import { BadgeCheck } from "lucide-react";
-
+import web1 from "../Web_Developer/assets/web1.png"
 const Content_Writing = () => {
   const types = [
     {
@@ -20,7 +20,7 @@ const Content_Writing = () => {
           {/* Image Section */}
           <div className="bg-[#f8f4ef] w-full max-w-[650px] h-[300px] md:h-[400px] lg:h-[550px] flex items-center justify-center shadow-md rounded-2xl mx-auto">
             <img
-              src="/src/components/services/Web_Developer/assets/web1.png"
+              src={web1}
               alt="Website illustration"
               className="h-auto w-[70%] md:w-[60%] lg:w-[80%] object-contain rounded-full"
             />

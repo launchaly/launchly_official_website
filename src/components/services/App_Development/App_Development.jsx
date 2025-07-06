@@ -1,5 +1,5 @@
 import { BadgeCheck } from "lucide-react";
-
+import app1 from "./assets/app.jpeg";
 const App_Development = () => {
   const types = [
     {
@@ -19,7 +19,7 @@ const App_Development = () => {
           {/* Image Section */}
           <div className="bg-[#f8f4ef] w-full max-w-[650px] h-[300px] md:h-[400px] lg:h-[550px] flex items-center justify-center shadow-md rounded-2xl mx-auto">
             <img
-              src="/src/components/services/App_Development/assets/app.jpeg"
+              src={app1}
               alt="Website illustration"
               className="h-auto w-[70%] md:w-[60%] lg:w-[80%] object-contain rounded-full"
             />
