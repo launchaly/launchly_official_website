@@ -5,39 +5,50 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import logo1 from "./PGB.jpg";
+import logo3 from "./Quick.jpg";  
+import logo5 from "./W5.jpg";
+import logo6 from "./W4.jpg";
+import logo7 from "./W3.jpg";
+import logo8 from "./W8.jpg"
+import logo9 from "./W9.jpg"
+
+
+
+
 const projects = [
   {
-    image: "/src/components/Our_Working_Team/assets/W9.jpg",
+    image: logo9,
     title: "Apna Paisa",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/PGB.jpg",
+    image: logo1,
     title: "PGB Technologies",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/Quick.jpg",
+    image: logo3,
     title: "Quick Mobiles",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/W8.jpg",
+    image: logo8,
     title: "Reify",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/W5.jpg",
+    image: logo5,
     title: "Aveda Hotels",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/W4.jpg",
+    image: logo6,
     title: "Metsmorf",
     link: "#",
   },
   {
-    image: "/src/components/Our_Working_Team/assets/W3.jpg",
+    image: logo7,
     title: "Sentinels Security",
     link: "#",
   },
