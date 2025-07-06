@@ -2,6 +2,10 @@ import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Our_Working_Team from "../Our_Working_Team/Our_Working_Team";
+import sadanand from "./assets/Sadanand_kumar_yadav.jpg"
+import suraj from "./assets/Suraj_Kumar.jpg";
+
+
 
 const OurTeam = () => {
   return (
@@ -21,7 +25,7 @@ const OurTeam = () => {
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
             <div className="flex-shrink-0 w-full max-w-sm">
               <img
-                src="/src/components/Our_Working_Team/assets/Sadanand_kumar_yadav.jpg"
+                src={sadanand}
                 alt="Sadanand Kumar Yadav"
                 className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
               />
@@ -62,7 +66,7 @@ const OurTeam = () => {
                 ability to deliver quality work in demanding environments. After
                 gaining years of experience throughout his journey, he decided
                 to start his own business. Now, he is the{" "}
-                <strong>CEO and Founder of Launchly Software Pvt Ltd</strong>.
+                <strong>CEO and Founder of Launchly Software Pvt Ltd</strong>.
                 The clients she previously worked with are now collaborating
                 with him, and he is building and growing her own company.
               </p>
@@ -73,7 +77,7 @@ const OurTeam = () => {
           <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
             <div className="flex-shrink-0 w-full max-w-sm">
               <img
-                src="/src/components/Our_Working_Team/assets/Suraj_Kumar.jpg"
+                src={suraj}
                 alt="Suraj Kumar"
                 className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
               />
