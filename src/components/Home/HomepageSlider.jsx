@@ -10,6 +10,9 @@ import Team from "../Our Team/Team";
 import OurWork from "../Our Work/OurWork";
 import OurClients from "../Our Clients/OurClients";
 import { Link } from "react-router-dom";
+import walpapper1 from "../Our_Working_Team/assets/wallpaper.jpg";
+import walpapper2 from "../Our_Working_Team/assets/wallpaper2.jpg";
+import walpapper3 from "../Our_Working_Team/assets/wallpaper3.webp";
 
 // Custom Prev Arrow (only for desktop)
 const PrevArrow = ({ onClick }) => (
@@ -34,21 +37,21 @@ const NextArrow = ({ onClick }) => (
 const HomepageSlider = () => {
   const slides = [
     {
-      image: "/src/components/Our_Working_Team/assets/wallpaper.jpg",
+      image: { walpapper1 },
       title: "We Provide Services.",
       description:
         "Website Development, App Development, Digital Marketing, Social Media Marketing,Content Writing.",
       buttonText: "Contact Us",
     },
     {
-      image: "/src/components/Our_Working_Team/assets/wallpaper2.jpg",
+      image: { walpapper2 },
       title: "Elavate Your Online Presence with Us.",
       description:
         "We specialize in creating cutting-edge IT solution that enhance your brand visibility, improve user engagement, and drive business growth.",
       buttonText: "Contact Us",
     },
     {
-      image: "/src/components/Our_Working_Team/assets/wallpaper3.webp",
+      image: { walpapper3 },
       title: "Smart Solution for a Digital Wolrld.",
       description:
         "In a era driven by technology, businesses need innovative and efficient IT solutions to stay ahead.",
@@ -88,41 +91,44 @@ const HomepageSlider = () => {
 
   return (
     <>
-    <div className="relative w-full h-[100vh] mt-25 verflow-hidden">
-      <div className="relative h-full">
-        <Slider {...settings}>
-          {slides.map((slide, index) => (
-            <div key={index} className="h-[100vh] w-full relative">
-              <img
-                src={slide.image}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover object-center"
-              />
-              {/* Overlay Content for each slide */}
-              <div className="absolute inset-0 flex items-center z-10 px-4">
-                <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-50 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
-                  <h1 className="text-[20px] sm:text-7xl  leading-5 tracking-tighter mb-4">
-                    {slide.title}
-                  </h1>
-                  <p className=" sm:text-base mb-1 sm:mb-5 mt-4 font-[10px] sm:font-[15px] text-#fff leading-6  sm:tracking-wider tracking-normal">
-                    {slide.description}
-                  </p>
-                  <Link to="/contact-banner" className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold text-sm sm:text-base px-6 py-2 rounded-[50px] mt-[15px] p-[12px 15px]">
-                    {slide.buttonText}
-                  </Link>
+      <div className="relative w-full h-[100vh] mt-25 verflow-hidden">
+        <div className="relative h-full">
+          <Slider {...settings}>
+            {slides.map((slide, index) => (
+              <div key={index} className="h-[100vh] w-full relative">
+                <img
+                  src={slide.image}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full h-full object-cover object-center"
+                />
+                {/* Overlay Content for each slide */}
+                <div className="absolute inset-0 flex items-center z-10 px-4">
+                  <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-50 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
+                    <h1 className="text-[20px] sm:text-7xl  leading-5 tracking-tighter mb-4">
+                      {slide.title}
+                    </h1>
+                    <p className=" sm:text-base mb-1 sm:mb-5 mt-4 font-[10px] sm:font-[15px] text-#fff leading-6  sm:tracking-wider tracking-normal">
+                      {slide.description}
+                    </p>
+                    <Link
+                      to="/contact-banner"
+                      className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold text-sm sm:text-base px-6 py-2 rounded-[50px] mt-[15px] p-[12px 15px]"
+                    >
+                      {slide.buttonText}
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
-    <About />
-    <Services />
-    <ChooseUs />
-    <Team />
-    <OurWork />
-    <OurClients />
+      <About />
+      <Services />
+      <ChooseUs />
+      <Team />
+      <OurWork />
+      <OurClients />
     </>
   );
 };
