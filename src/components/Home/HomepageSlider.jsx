@@ -10,9 +10,9 @@ import Team from "../Our Team/Team";
 import OurWork from "../Our Work/OurWork";
 import OurClients from "../Our Clients/OurClients";
 import { Link } from "react-router-dom";
-import walpapper1 from "../Our_Working_Team/assets/wallpaper.jpg";
-import walpapper2 from "../Our_Working_Team/assets/wallpaper2.jpg";
-import walpapper3 from "../Our_Working_Team/assets/wallpaper3.webp";
+import walpapper from "./assets/wallpaper.jpg";
+import walpapper2 from "./assets/wallpaper2.jpg";
+import walpapper3 from "./assets/wallpaper3.jpg";
 
 // Custom Prev Arrow (only for desktop)
 const PrevArrow = ({ onClick }) => (
@@ -37,7 +37,7 @@ const NextArrow = ({ onClick }) => (
 const HomepageSlider = () => {
   const slides = [
     {
-      image: { walpapper1 },
+      image: { walpapper },
       title: "We Provide Services.",
       description:
         "Website Development, App Development, Digital Marketing, Social Media Marketing,Content Writing.",
