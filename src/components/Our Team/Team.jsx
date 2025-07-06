@@ -2,8 +2,8 @@ import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Our_Working_Team from "../Our_Working_Team/Our_Working_Team";
-import Sadanand from "./assets/Sadanand_kumar_yadav.jpg";
-import Suraj from "./assets/Suraj_Kumar.jpg";
+import image from "./assets/Sadanand_kumar_yadav.jpg";
+import image2 from "./assets/Suraj_Kumar.jpg";
 
 const OurTeam = () => {
   return (
@@ -23,7 +23,7 @@ const OurTeam = () => {
             <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
               <div className="flex-shrink-0 w-full max-w-sm">
                 <img
-                  src={Sadanand}
+                  src={image}
                   alt="Sadanand Kumar Yadav"
                   className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
                 />
@@ -75,7 +75,7 @@ const OurTeam = () => {
             <div className="bg-white rounded-3xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-10 shadow-md">
               <div className="flex-shrink-0 w-full max-w-sm">
                 <img
-                  src={Suraj}
+                  src={image2}
                   alt="Suraj Kumar"
                   className="rounded-2xl w-full h-[380px] object-cover object-top shadow-md"
                 />
