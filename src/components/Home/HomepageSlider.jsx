@@ -10,9 +10,9 @@ import Team from "../Our Team/Team";
 import OurWork from "../Our Work/OurWork";
 import OurClients from "../Our Clients/OurClients";
 import { Link } from "react-router-dom";
-import walpapper from "./assets/wallpaper.jpg";
-import walpapper2 from "./assets/wallpaper2.jpg";
-import walpapper3 from "./assets/wallpaper3.jpg";
+import walpapper from "../../../public/wallpaper.jpg";
+import walpapper2 from "../../../public/wallpaper2.jpg";
+import walpapper3 from "../../../public/wallpaper3.webp";
 
 // Custom Prev Arrow (only for desktop)
 const PrevArrow = ({ onClick }) => (
