@@ -1,16 +1,15 @@
 import React from "react";
+import cc1 from "./assets/c1.png";
+import cc2 from "./assets/c2.png";
+import cc3 from "./assets/c3.webp";
+import cc4 from "./assets/c4.webp";
+import cc5 from "./assets/c5.png";
+import cc6 from "./assets/c6.png";
+import cc7 from "./assets/c7.avif";
+import cc8 from "./assets/c8.png";
+import cc9 from "./assets/c1.png";
 
-const clientLogos = [
-  "/src/components/Our_Working_Team/assets/c1.png",
-  "/src/components/Our_Working_Team/assets/c2.png",
-  "/src/components/Our_Working_Team/assets/c3.webp",
-  "/src/components/Our_Working_Team/assets/c4.webp",
-  "/src/components/Our_Working_Team/assets/c5.png",
-  "/src/components/Our_Working_Team/assets/c6.png",
-  "/src/components/Our_Working_Team/assets/c7.avif",
-  "/src/components/Our_Working_Team/assets/c8.png",
-  "/src/components/Our_Working_Team/assets/c1.png",
-];
+const clientLogos = [cc1, cc2, cc3, cc4, cc5, cc6, cc7, cc8, cc9];
 
 const OurClients = () => {
   return (
