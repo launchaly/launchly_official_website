@@ -5,31 +5,29 @@ import Icon3 from "./assets/icon3.png";
 import Icon4 from "./assets/icon4.png";
 import Icon5 from "./assets/icon5.png";
 
-
-
 const features = [
   {
-    icon: {Icon1},
+    icon: Icon1,
     title: "Expert Team",
     desc: "Our team of experts ensures top-notch service and innovative solutions.",
   },
   {
-    icon: {Icon2},
+    icon: Icon2,
     title: "Customized Solutions",
     desc: "We provide tailored solutions to meet your specific needs.",
   },
   {
-    icon: {Icon3},
+    icon: Icon3,
     title: "Affordable Pricing",
     desc: "We offer high-quality services at competitive and affordable prices.",
   },
   {
-    icon: {Icon4},
+    icon: Icon4,
     title: "Timely Delivery",
     desc: "We ensure your project is delivered on time, every time.",
   },
   {
-    icon: {Icon5},
+    icon: Icon5,
     title: "End-to-End Support",
     desc: "We provide comprehensive support throughout the project lifecycle.",
   },
