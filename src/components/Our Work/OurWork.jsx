@@ -5,16 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import logo1 from "./PGB.jpg";
-import logo3 from "./Quick.jpg";  
-import logo5 from "./W5.jpg";
-import logo6 from "./W4.jpg";
-import logo7 from "./W3.jpg";
-import logo8 from "./W8.jpg"
-import logo9 from "./W9.jpg"
-
-
-
+import logo1 from "./assets/PGB.jpg";
+import logo3 from "./assets/Quick.jpg";
+import logo5 from "./assets/W5.jpg";
+import logo6 from "./assets/W4.jpg";
+import logo7 from "./assets/W3.jpg";
+import logo8 from "./assets/W8.jpg";
+import logo9 from "./assets/W9.jpg";
 
 const projects = [
   {
