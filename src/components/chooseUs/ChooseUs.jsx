@@ -1,33 +1,33 @@
 import React from "react";
-import Icon1 from "./assets/icon1.png";
-import Icon2 from "./assets/icon2.png";
-import Icon3 from "./assets/icon3.png";
-import Icon4 from "./assets/icon4.png";
-import Icon5 from "./assets/icon5.png";
+import Icon_1 from "./assets/icon1.png";
+import Icon_2 from "./assets/icon2.png";
+import Icon_3 from "./assets/icon3.png";
+import Icon_4 from "./assets/icon4.png";
+import Icon_5 from "./assets/icon5.png";
 
 const features = [
   {
-    icon: Icon1,
+    icon: Icon_1,
     title: "Expert Team",
     desc: "Our team of experts ensures top-notch service and innovative solutions.",
   },
   {
-    icon: Icon2,
+    icon: Icon_2,
     title: "Customized Solutions",
     desc: "We provide tailored solutions to meet your specific needs.",
   },
   {
-    icon: Icon3,
+    icon: Icon_3,
     title: "Affordable Pricing",
     desc: "We offer high-quality services at competitive and affordable prices.",
   },
   {
-    icon: Icon4,
+    icon: Icon_4,
     title: "Timely Delivery",
     desc: "We ensure your project is delivered on time, every time.",
   },
   {
-    icon: Icon5,
+    icon: Icon_5,
     title: "End-to-End Support",
     desc: "We provide comprehensive support throughout the project lifecycle.",
   },
