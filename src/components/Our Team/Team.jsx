@@ -2,8 +2,8 @@ import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Our_Working_Team from "../Our_Working_Team/Our_Working_Team";
-import image from "./assets/Sadanand_kumar_yadav.jpg";
-import image2 from "./assets/Suraj_Kumar.jpg";
+import image from "../../../public/assets/Sadanand_kumar_yadav.jpg";
+import image2 from "../../../public/assets/Suraj_Kumar.jpg";
 
 const OurTeam = () => {
   return (
