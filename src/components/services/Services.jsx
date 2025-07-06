@@ -6,25 +6,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import icon1 from "./assets/icon1.svg";
+import icon2 from "./assets/icon2.svg";     
+import icon3 from "./assets/icon3.svg";
 
 // Base services data
 const baseServices = [
   {
     title: "Website Development",
     desc: "Website development involves creating, designing, and maintaining websites for the internet or intranet.",
-    icon: "/src/components/Our_Working_Team/assets/icon3.svg",
+    icon:  icon1,
     link: "/web-decvelopment-banner/1",
   },
   {
     title: "App Development",
     desc: "App development is the process of designing, building, testing, and deploying software applications for mobile or desktop platforms.",
-    icon: "/src/components/Our_Working_Team/assets/icon2.svg",
+    icon: icon2,
     link: "/app-development-banner/2",
   },
   {
     title: "Content Writing",
     desc: "Content writing is the process of creating, editing, and publishing written content for digital and print media.",
-    icon: "/src/components/Our_Working_Team/assets/icon1.svg",
+    icon: icon3,
     link: "/content-writer-banner/3",
   },
 ];
