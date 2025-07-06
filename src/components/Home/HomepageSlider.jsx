@@ -100,7 +100,7 @@ const HomepageSlider = () => {
                 />
                 {/* Overlay Content for each slide */}
                 <div className="absolute inset-0 flex items-center z-10 px-4">
-                  <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-5 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
+                  <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-50 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
                     <h1 className="text-[20px] sm:text-7xl  leading-5 tracking-tighter mb-4">
                       {slide.title}
                     </h1>
