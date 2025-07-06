@@ -10,9 +10,6 @@ import Team from "../Our Team/Team";
 import OurWork from "../Our Work/OurWork";
 import OurClients from "../Our Clients/OurClients";
 import { Link } from "react-router-dom";
-import walpapper from "../../../public/assets/wallpaper.jpg";
-import walpapper2 from "../../../public/assets/wallpaper2.jpg";
-import walpapper3 from "../../../public/assets/wallpaper3.webp";
 
 // Custom Prev Arrow (only for desktop)
 const PrevArrow = ({ onClick }) => (
@@ -37,21 +34,21 @@ const NextArrow = ({ onClick }) => (
 const HomepageSlider = () => {
   const slides = [
     {
-      image: { walpapper },
+      image: "/public/assets/wallpaper.jpg",
       title: "We Provide Services.",
       description:
         "Website Development, App Development, Digital Marketing, Social Media Marketing,Content Writing.",
       buttonText: "Contact Us",
     },
     {
-      image: { walpapper2 },
+      image: "/public/assets/wallpaper2.jpg",
       title: "Elavate Your Online Presence with Us.",
       description:
         "We specialize in creating cutting-edge IT solution that enhance your brand visibility, improve user engagement, and drive business growth.",
       buttonText: "Contact Us",
     },
     {
-      image: { walpapper3 },
+      image: "/public/assets/wallpaper3.webp",
       title: "Smart Solution for a Digital Wolrld.",
       description:
         "In a era driven by technology, businesses need innovative and efficient IT solutions to stay ahead.",
@@ -103,7 +100,7 @@ const HomepageSlider = () => {
                 />
                 {/* Overlay Content for each slide */}
                 <div className="absolute inset-0 flex items-center z-10 px-4">
-                  <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-50 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
+                  <div className="ml-[8%] min-h-[80px]  text-center sm:text-left text-white bg-black bg-opacity-5 backdrop-blur-sm rounded-2xl py-8 px-6 max-w-[90%] sm:max-w-[600px]">
                     <h1 className="text-[20px] sm:text-7xl  leading-5 tracking-tighter mb-4">
                       {slide.title}
                     </h1>
