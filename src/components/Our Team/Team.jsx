@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Our_Working_Team from "../Our_Working_Team/Our_Working_Team";
 import image from "../../../public/assets/Sadanand_kumar_yadav.jpg";
-import image2 from "../../../public/assets/Suraj_Kumar.jpg";
+import image2 from "../../../public/assets/image.png";
 
 const OurTeam = () => {
   return (
@@ -83,16 +83,16 @@ const OurTeam = () => {
 
               <div className="flex-1">
                 <h3 className="text-[#b48f2b] text-[24px] font-bold leading-[46px] uppercase mt-0 ">
-                  Suraj Kumar
+                  Sarathlal H.S
                 </h3>
 
                 <p className="text-[#be6d32] text-[14px] font-semibold mb-[15px] uppercase">
-                  CO-FOUNDER
+                  CO-FOUNDER & CTO
                 </p>
 
                 <div className="flex gap-3 mb-4">
                   <a
-                    href="https://www.linkedin.com/in/sadanand-kumar-yadav-433a81260/"
+                    href="https://www.linkedin.com/in/sarathlal-hs-34993537/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center border border-[#b48f2b] text-[#b48f2b] rounded-full hover:bg-[#b48f2b] hover:text-white transition"
@@ -108,15 +108,15 @@ const OurTeam = () => {
                 </div>
 
                 <p className="text-sm text-#000 text-[15px] leading-relaxed">
-                  <strong>Suraj Kumar</strong> I'm Suraj Kumar, a dedicated MERN
-                  Stack Developer with strong expertise in building full-stack
-                  web applications using React.js, Node.js, Express.js, and
-                  MongoDB. I’ve worked on projects like a real-time chat app
-                  with Socket.IO, an AI chatbot named Ai-chatPot, cryptocurrency
-                  dashboards, and more. I'm skilled in frontend technologies
-                  like HTML, CSS, JavaScript,React, Bootstrap, and Tailwind CSS,
-                  and have experience in Backend technologies also like Node,
-                  MongoDb and Express js .
+                  <strong>Sarathlal H.S</strong> I'm Sarathlal H.S, a dedicated
+                  MERN Stack Developer with strong expertise in building
+                  full-stack web applications using React.js, Node.js,
+                  Express.js, and MongoDB. I’ve worked on projects like a
+                  real-time chat app with Socket.IO, an AI chatbot named
+                  Ai-chatPot, cryptocurrency dashboards, and more. I'm skilled
+                  in frontend technologies like HTML, CSS, JavaScript,React,
+                  Bootstrap, and Tailwind CSS, and have experience in Backend
+                  technologies also like Node, MongoDb and Express js .
                 </p>
               </div>
             </div>

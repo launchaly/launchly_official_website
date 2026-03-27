@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "./assets/logo.jpg";
+import Logo from "./assets/logo.jpeg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Header = () => {
           <img
             src={Logo}
             alt="Logo"
-            className="w-[55px] md:w-[90px] h-auto rounded-full"
+            className="w-[65px] md:w-[95px] h-auto rounded-full"
           />
         </Link>
       </div>
